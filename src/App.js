@@ -1,24 +1,44 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import { useState, useEffect } from 'react';
 import './App.css';
+import MobNavbar from './components/navbar/MobNavbar';
+import MobLanding from './components/LandingPage/MobLanding';
+import MobSkills from './components/skills/MobSkills';
 
 function App() {
+  const [mobDisplay, setMobDisplay] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 600) {
+        setMobDisplay(true);
+      } else {
+        setMobDisplay(false);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Call handleResize once initially to set the initial state
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {mobDisplay && <div> 
+
+          <MobNavbar />
+          <div style={{backgroundColor: "#B29DF5"}}>
+          <MobLanding />
+          </div>
+          
+          <MobSkills/>
+         
+          
+          
+        
+        </div>}
+    </>
   );
 }
 

@@ -1,0 +1,18 @@
+
+    .mob-nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        align-items: center;
+        
+    }
+    .mob-nav-container{
+        background-color: rgb(249, 249, 249); 
+        width: 100%;
+        height: 75px; 
+        overflow: hidden;
+    }
+    
+
