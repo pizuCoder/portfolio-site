@@ -29,14 +29,14 @@ span:before {
     width: 25px;
     left: 3px;
     bottom: 2.6px;
-    background-color: #111111;
+    background-color: #212529;
     border-radius: 50%;
     transition: 0.3s;
   }
   
   
   input:checked + span {
-    background-color: #111111;
+    background-color: #212529;
   }
   
   input:checked + span:before {
