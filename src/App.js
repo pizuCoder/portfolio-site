@@ -39,11 +39,11 @@ function App() {
           <div style={{backgroundColor: isDarkMode? "#B29DF5" : "#322850"}}>
           <MobLanding isDarkMode={isDarkMode}/>
           </div>
-          <div>
-          <MobSkills/>
+          <div id="skills-section">
+          <MobSkills isDarkMode={isDarkMode}/>
           </div>
-          <div>
-          <ProjectPage />
+          <div id="projects-section">
+          <ProjectPage isDarkMode={isDarkMode}/>
           </div>
           <footer>
             Made with ❤️ & ⚛️ by Priya Moghe

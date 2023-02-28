@@ -2,6 +2,8 @@
     padding: 15px;
     /* background-color: azure; */
     text-align: center;
+    /* height: 100%; */
+    
 }
 .techStack{
     margin-top: 3rem;
@@ -11,12 +13,13 @@
 
 .skills{
     margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5.5rem;
     
     
 }
 h2 {
     font-weight: 600;
+    margin-bottom: 2rem;
 }
 
 

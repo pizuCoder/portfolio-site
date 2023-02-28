@@ -34,7 +34,7 @@
         justify-content: center;
         height: fit-content;
         padding: 2rem 1rem;
-        animation-duration: 0.4s;
+        animation-duration: .4s;
         animation-timing-function: ease-in-out;
     }
     
@@ -42,10 +42,13 @@
     animation-name: slide-in;
     animation-fill-mode: forwards;
   }
+  #side-bar.show p {
+    text-decoration: underline;
+  }
   
   #side-bar.hide {
     animation-name: slide-out;
-    animation-fill-mode: backwards;
+    animation-fill-mode: forwards;
   }
   
   @keyframes slide-in {

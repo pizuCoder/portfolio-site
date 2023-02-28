@@ -3,7 +3,7 @@ import ProjectCard from "./projectCard";
 import './projectPage.css'
 // import exampleImg from '../assets/myImg-light-small.png'
 
-export default function ProjectPage(){
+export default function ProjectPage({isDarkMode}){
 
     const webdevData = [
         {
@@ -63,6 +63,7 @@ export default function ProjectPage(){
                 title={project.title}
                 description={project.description}
                 link={project.link}
+                isDarkMode={isDarkMode}
             />
         )
     })
@@ -75,20 +76,22 @@ export default function ProjectPage(){
                 title={project.title}
                 description={project.description}
                 link={project.link}
+                isDarkMode={isDarkMode}
+                
             />
         )
     })
     return(
-        <div className="container">
-            <h2>PROJECTS</h2>
+        <div className="container" style={{backgroundColor: isDarkMode ? "white" : "#212529", border: "none" }}>
+            <h2 style={{color: isDarkMode ? "#212529" : "white" }}>PROJECTS</h2>
             <div className="webDev">
-                <h3>Web Development</h3>
+                <h3 style={{color: isDarkMode ? "#212529" : "white" }}>Web Development</h3>
                 <div>
                 {webProjects}
                 </div>
             </div>
             <div className="uiux">
-                <h3>UI/UX Work</h3>
+                <h3 style={{color: isDarkMode ? "#212529" : "white" }}>UI/UX Work</h3>
                 <div>
                 {uiuxProjects}
                 </div>
