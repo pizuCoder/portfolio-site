@@ -45,6 +45,9 @@
   #side-bar.show p {
     text-decoration: underline;
   }
+  #side-bar a{
+    color: inherit;
+  }
   
   #side-bar.hide {
     animation-name: slide-out;

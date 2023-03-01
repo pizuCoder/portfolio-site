@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 function ProjectCard(props) {
   return (
     <Card 
-    style={{ width: '18rem', zIndex:"0.9" }}
+    style={{ width: '18rem', zIndex:"0.9", marginBottom: "1rem" }}
     bg = {props.isDarkMode ? "light" : "dark"}
     text = {props.isDarkMode ? "dark" : "light"}
     border = {props.isDarkMode ? "dark" : "light"}>
@@ -14,7 +14,7 @@ function ProjectCard(props) {
         <Card.Text>
           {props.description}
         </Card.Text>
-        <Button variant={props.isDarkMode ? "light" : "dark"} href={props.link}>Check It Out</Button>
+        <Button variant={props.isDarkMode ? "dark" : "light"} href={props.link} target='_blank'>Check It Out</Button>
       </Card.Body>
     </Card>
   );

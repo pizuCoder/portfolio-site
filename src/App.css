@@ -2,3 +2,21 @@
   position: relative;
   z-index: 1;
 }
+Footer {
+  text-align: center;
+  padding: 1rem 0;
+}
+/* *:focus {
+  outline: none;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+:focus-visible {
+  outline: none;
+}
+* {
+  border: none;
+} */
+
