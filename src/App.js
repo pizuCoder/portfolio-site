@@ -10,6 +10,11 @@ import MobLanding from "./components/LandingPage/MobLanding";
 import MobSkills from "./components/skills/MobSkills";
 import ProjectPage from "./components/projects/projectsPage";
 
+import WebNavbar from "./components/navbar/webNavbar";
+import WebLanding from './components/LandingPage/WebLanding';
+import WebSkills from './components/skills/WebSkills';
+import WebProjects from './components/projects/WebProjects'
+
 function App() {
   const [mobDisplay, setMobDisplay] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -76,6 +81,38 @@ function App() {
               by Priya Moghe
             </footer>
           </div>
+        </div>
+      )}
+      {!mobDisplay && (
+        <div id="web-display-container" style={{backgroundColor: isDarkMode ? "": "#212529"}}>
+          <WebNavbar 
+          isDarkMode={isDarkMode} 
+          toggleDarkMode={() => setIsDarkMode(!isDarkMode)}/>
+          <div
+            style={{
+              backgroundColor: isDarkMode ? "#B29DF5" : "#322850",
+              margin: 0,
+            }}
+          >
+            <WebLanding isDarkMode={isDarkMode} />
+          </div>
+          <WebSkills isDarkMode={isDarkMode} />
+          <WebProjects isDarkMode={isDarkMode} />
+          <div style={footStyle} className="Footer">
+            <footer>
+              Made with ❤️ &{" "}
+              <i>
+                <img
+                  src={logo}
+                  alt="react logo"
+                  style={{ width: "24px", height: "24px", display: "inline" }}
+                />
+              </i>{" "}
+              by Priya Moghe
+            </footer>
+          </div>
+        
+
         </div>
       )}
     </>

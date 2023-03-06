@@ -19,4 +19,6 @@ Footer {
 * {
   border: none;
 } */
-
+*{
+  margin: 0
+}

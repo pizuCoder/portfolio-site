@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+    z-index: 1;
+  }
+  
+  .web-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 2rem;
+    /* flex:1; */
+  }
+  
+  #desktop-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex: 1; */
+    width: 50%;
+  }
+  button{
+    border: none;
+    border-radius: 8px;
+    /* width: 50%; */
+    margin-left: 1.5rem;
+  }
+  
+  #desktop-menu a {
+    margin: 0 10px;
+  }
+  
+  img {
+    width: 40px;
+    height: 40px;
+    /* margin-right: auto;
+    margin-left: 20px; */
+  }
+  
+  
+  

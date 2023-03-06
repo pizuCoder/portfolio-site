@@ -59,7 +59,7 @@ export default function MobNavbar(props, { isDarkMode }) {
 
   return (
     <>
-      {/* for mobile */}
+      
       <div className="mob-nav-container" style={navStyle}>
         <div className="mob-nav">
           <ToggleBtn toggled={isDarkMode} onClick={props.toggleDarkMode} />
